@@ -1,8 +1,10 @@
 ## Getting Started
 
->cd run_scripts
->chmod +x run_scenic.sh
->./run_scenic.sh 
+# >cd run_scripts
+
+# >chmod +x run_scenic.sh
+
+# >./run_scenic.sh 
 
 # blk_h:           2, blk_w =           2
 # mode: block mode
