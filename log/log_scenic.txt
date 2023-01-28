@@ -1,0 +1,763 @@
+Reading C:/questasim_10.0b/tcl/vsim/pref.tcl 
+
+# 10.0b
+
+# vsim -do ../modelsim-prj/conv_wave.do -c -voptargs=+acc=npr mux_param mux_4x1 demux_1x4 demux_1x15 conv_tb_v2 
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.mux_param(fast)
+# Loading work.mux_4x1(fast)
+# Loading work.mux2to1(fast__1)
+# Loading work.demux_1x4(fast)
+# Loading work.demux_1x15(fast)
+# Loading work.conv_tb_v2(fast)
+# Loading work.dnn_hw_top(fast)
+# Loading work.ml_ctrl_fsm(fast)
+# Loading work.pe_array(fast)
+# Loading work.PE(fast)
+# Loading work.regfile(fast)
+# Loading work.mux1to2(fast)
+# Loading work.booth_multiplier(fast)
+# Loading work.alu(fast)
+# Loading work.mux2to1(fast)
+# Loading work.serial_adder(fast)
+# Loading work.piso(fast)
+# Loading work.full_adder(fast)
+# Loading work.d_flipflop(fast)
+# Loading work.regfile(fast__1)
+# Loading work.fifo_buffer_bank(fast)
+# Loading work.fifo(fast)
+# Loading work.simple_dpram_sclk(fast)
+# Loading work.fifo(fast__1)
+# Loading work.simple_dpram_sclk(fast__1)
+# ** Warning: (vsim-PLI-3691) ../src/tb/conv_tb.sv(224): Expected a system task, not a system function '$fscanf'.
+#         Region: /conv_tb_v2/#anonblk#0#221#4#/#anonblk#0#222#4#/#anonblk#0#223#4#
+# ** Error: (vsim-3906) ../src/rtl/dnn_hw_top.sv(81): Connection type is incompatible with port (actn_in):  Array ranges [0:0] & [357:0] have different lengths.
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[0]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[0]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[1]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[1]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[2]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[2]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[3]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[3]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[4]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[4]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[5]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[5]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[6]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[6]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[7]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[7]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[8]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[8]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[9]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[9]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[10]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[10]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[11]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[11]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[12]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[12]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[13]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[13]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[14]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[14]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[15]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[15]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[16]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[16]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[17]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[17]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[18]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[18]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[19]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[19]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[20]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[20]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[21]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[21]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[22]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[22]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[23]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[23]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[24]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[24]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[25]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[25]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[26]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[26]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[27]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[27]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[28]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[28]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[29]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[29]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[30]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[30]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[31]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[31]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[32]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[32]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[33]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[33]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[34]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[34]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[35]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[35]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[36]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[36]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[37]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[37]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[38]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[38]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[39]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[39]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[40]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[40]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[41]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[41]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[42]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[42]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[43]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[43]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[44]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[44]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[45]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[45]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[46]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[46]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[47]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[47]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[48]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[48]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[49]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[49]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[50]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[50]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[51]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[51]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[52]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[52]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[53]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[53]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[54]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[54]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[55]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[55]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[56]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[56]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[57]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[57]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[58]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[58]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[59]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[59]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[60]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[60]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[61]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[61]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[62]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[62]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[63]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[63]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[64]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[64]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[65]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[65]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[66]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[66]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[67]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[67]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[68]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[68]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[69]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[69]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[70]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[70]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[71]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[71]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[72]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[72]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[73]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[73]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[74]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[74]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[75]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[75]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[76]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[76]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[77]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[77]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[78]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[78]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[79]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[79]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[80]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[80]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[81]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[81]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[82]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[82]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[83]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[83]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[84]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[84]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[85]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[85]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[86]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[86]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[87]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[87]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[88]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[88]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[89]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[89]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[90]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[90]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[91]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[91]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[92]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[92]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[93]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[93]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[94]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[94]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[95]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[95]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[96]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[96]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[97]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[97]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[98]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[98]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[99]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[99]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[100]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[100]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[101]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[101]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[102]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[102]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[103]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[103]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[104]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[104]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[105]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[105]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[106]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[106]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[107]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[107]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[108]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[108]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[109]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[109]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[110]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[110]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[111]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[111]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[112]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[112]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[113]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[113]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[114]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[114]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[115]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[115]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[116]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[116]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[117]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[117]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[118]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[118]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[119]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[119]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[120]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[120]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[121]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[121]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[122]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[122]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[123]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[123]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[124]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[124]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[125]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[125]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[126]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[126]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[127]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[127]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[128]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[128]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[129]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[129]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[130]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[130]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[131]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[131]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[132]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[132]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[133]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[133]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[134]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[134]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[135]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[135]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[136]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[136]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[137]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[137]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[138]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[138]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[139]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[139]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[140]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[140]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[141]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[141]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[142]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[142]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[143]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[143]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[144]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[144]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[145]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[145]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[146]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[146]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[147]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[147]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[148]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[148]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[149]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[149]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[150]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[150]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[151]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[151]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[152]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[152]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[153]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[153]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[154]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[154]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[155]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[155]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[156]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[156]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[157]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[157]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[158]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[158]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[159]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[159]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[160]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[160]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[161]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[161]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[162]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[162]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[163]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[163]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[164]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[164]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[165]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[165]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[166]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[166]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[167]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[167]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[168]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[168]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[169]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[169]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[170]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[170]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[171]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[171]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[172]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[172]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[173]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[173]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[174]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[174]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[175]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[175]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[176]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[176]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[177]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[177]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[178]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[178]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[179]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[179]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[180]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[180]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[181]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[181]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[182]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[182]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[183]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[183]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[184]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[184]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[185]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[185]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[186]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[186]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[187]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[187]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[188]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[188]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[189]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[189]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[190]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[190]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[191]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[191]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[192]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[192]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[193]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[193]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[194]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[194]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[195]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[195]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[196]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[196]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[197]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[197]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[198]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[198]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[199]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[199]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[200]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[200]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[201]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[201]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[202]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[202]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[203]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[203]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[204]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[204]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[205]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[205]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[206]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[206]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[207]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[207]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[208]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[208]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[209]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[209]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[210]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[210]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[211]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[211]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[212]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[212]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[213]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[213]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[214]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[214]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[215]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[215]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[216]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[216]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[217]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[217]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[218]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[218]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[219]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[219]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[220]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[220]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[221]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[221]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[222]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[222]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[223]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[223]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[224]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[224]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[225]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[225]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[226]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[226]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[227]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[227]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[228]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[228]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[229]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[229]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[230]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[230]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[231]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[231]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[232]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[232]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[233]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[233]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[234]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[234]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[235]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[235]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[236]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[236]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[237]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[237]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[238]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[238]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[239]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[239]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[240]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[240]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[241]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[241]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[242]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[242]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[243]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[243]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[244]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[244]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[245]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[245]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[246]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[246]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[247]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[247]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[248]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[248]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[249]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[249]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[250]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[250]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[251]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[251]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[252]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[252]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[253]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[253]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[254]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[254]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[255]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[255]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[256]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[256]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[257]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[257]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[258]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[258]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[259]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[259]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[260]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[260]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[261]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[261]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[262]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[262]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[263]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[263]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[264]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[264]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[265]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[265]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[266]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[266]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[267]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[267]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[268]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[268]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[269]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[269]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[270]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[270]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[271]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[271]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[272]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[272]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[273]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[273]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[274]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[274]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[275]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[275]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[276]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[276]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[277]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[277]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[278]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[278]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[279]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[279]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[280]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[280]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[281]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[281]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[282]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[282]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[283]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[283]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[284]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[284]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[285]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[285]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[286]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[286]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[287]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[287]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[288]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[288]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[289]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[289]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[290]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[290]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[291]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[291]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[292]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[292]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[293]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[293]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[294]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[294]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[295]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[295]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[296]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[296]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[297]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[297]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[298]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[298]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[299]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[299]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[300]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[300]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[301]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[301]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[302]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[302]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[303]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[303]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[304]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[304]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[305]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[305]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[306]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[306]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[307]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[307]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[308]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[308]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[309]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[309]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[310]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[310]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[311]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[311]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[312]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[312]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[313]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[313]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[314]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[314]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[315]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[315]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[316]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[316]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[317]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[317]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[318]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[318]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[319]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[319]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[320]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[320]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[321]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[321]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[322]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[322]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[323]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[323]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[324]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[324]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[325]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[325]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[326]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[326]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[327]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[327]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[328]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[328]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[329]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[329]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[330]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[330]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[331]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[331]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[332]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[332]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[333]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[333]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[334]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[334]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[335]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[335]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[336]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[336]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[337]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[337]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[338]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[338]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[339]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[339]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[340]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[340]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[341]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[341]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[342]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[342]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[343]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[343]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[344]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[344]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[345]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[345]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[346]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[346]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[347]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[347]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[348]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[348]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[349]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[349]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[350]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[350]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[351]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[351]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[352]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[352]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[353]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[353]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[354]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[354]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[355]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[355]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[356]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[356]/pe_inst/acc_regfile
+# ** Error: (vsim-3838) ../src/rtl/pe.sv(102): Variable '/conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[357]/pe_inst/conv_acc' written by continuous and procedural assignments. See ../src/rtl/pe.sv(110). 
+#         Region: /conv_tb_v2/dnn_hw_top_inst/pe_array_inst/genblk1[0]/genblk1[357]/pe_inst/acc_regfile
+# Error loading design
