@@ -1,11 +1,18 @@
 ## Getting Started
 
-# >cd run_scripts
+1.Guide of running this folder
+<pre><code>
+$ cd run_scripts
+$ chmod +x run_scenic.sh
+$ ./run_scenic.sh
+</code></pre>
 
-# >chmod +x run_scenic.sh
 
-# >./run_scenic.sh 
 
+
+
+
+<pre><code>
 # blk_h:           2, blk_w =           2
 # mode: block mode
 # run:           1
