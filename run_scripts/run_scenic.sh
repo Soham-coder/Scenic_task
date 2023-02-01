@@ -30,16 +30,15 @@ fi
 pip3 install numpy
 cd ../src/utils/
 python conv.py
-#python ../src/utils/conv.py
 cd ../../run_scripts/
 
 
 $library work
-$compile -writetoplevels questa.tops -timescale 1ps/1fs -f run_scenic_filelist.f 
-$sim -f questa.tops -c -do ../modelsim-prj/conv_wave.do -voptargs=+acc=npr | tee $LOG/log_scenic.txt
+$compile -sv -writetoplevels questa.tops -timescale 1ps/1fs -f run_scenic_filelist.f 
+$sim -f questa.tops -c -do "../modelsim-prj/conv_wave.do" -voptargs=+acc=npr | tee $LOG/log_scenic.txt
 
 mv work $TRASH
 mv questa.tops $TRASH
-mv dump.vcd $TRASH
+mv dump.vcd $TRASH #It will be generated once simulation goes through!
 mv transcript $TRASH
 mv vsim.wlf $TRASH
